@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Foody-Register</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="form-wrap">
+        <form action="" method="POST">
+            <h2>Foody-Register</h2>
+                    <p>
+                        <label for="username" class="floatLabel">Username</label>
+                        <input id="username" name="username" type="text" required pattern="[a-zA-Z0-9]+">
+                    </p>
+                    <p>
+                        <label for="email" class="floatLabel">Email</label>
+                        <input id="email" name="email" type="text" required>
+                    </p>
+                    <p>
+                        <label for="password" class="floatLabel">Password</label>
+                        <input id="password" name="password" type="password" required minlength=8>
+                    </p>
+                    <p>
+                        <label for="mobile" class="floatLabel">Mobile</label>
+                        <input id="mobile" name="mobile" type="text" minlength=11 maxlength="11" pattern="01[0-9]+">
+                        
+                    </p>
+                    <p>
+                        <label for="address" class="floatLabel">Address</label>
+                        <input id="address" name="address" type="text">
+                        
+                    </p>
+                      <p>
+                          <input type="submit" value="Sign Up!" id="submit">
+                      </p>
+                  </form>
+</div>
+
+
+
+    </body>
+
+
+
+</html>
