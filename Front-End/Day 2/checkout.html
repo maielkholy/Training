@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Foody-Checkout</title>
+        <link href="checkout.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="cart">
+            <table id="itemCart" class="order-table">
+
+            <div><h2><img width="50px" src="checkout.png"/>   Checkout Cart</h2> </div>
+
+                
+                
+                <!--OneItem-->
+                <tr>
+                    <td><img width=150 src="https://s3.eu-central-1.amazonaws.com/engine.izi.finance/izifood/products/1598905527692.jpeg"/></td>
+                
+                <td>
+                  <br> <span class='thin'>Chili Pizza</span>
+                  <br>Chilli pizza <br>size: Medium</br> extras: -cheese<br><br>
+                </td>
+                </tr>
+
+                <tr>
+                    <td><div class="price" id="p" value=100> $100</div></td>
+                    
+                </tr>
+                <!--end of item-->
+                <!--NewItem-->
+                <tr>
+                    <td>
+                        <img width="150px" src="https://img.freepik.com/free-photo/craft-beef-burger-with-cheese-rocket-leafs-wood-table_74692-155.jpg?size=626&ext=jpg"/>
+                    </td>
+                
+                <td>
+                  <br> <span class='thin'>Cheese Burger</span>
+                  <br>Speciality Beef burger with cheese.<br> extras: -jallepeno<br><br>
+                </td>
+                </tr>
+
+                <tr>
+                    <td><div class="price" id="p" value=200> $200</div></td>
+                    
+                </tr>
+                <!--end of item-->
+        
+            </table>
+            <button class="checkout-btn" onClick=myFunction() value="Check Out">Check Out</button>
+          
+          </div>
+          <script>
+            function myFunction() {
+              var x = document.getElementsByClassName("price");
+              var total=0;
+              var text="";
+              for (var i = 0; i < x.length ;i++) {
+                  total+= parseInt(x[i].getAttribute('value'));
+              }
+              alert("Food is on it's way! Cart Total: $"+ total);
+            }
+            </script> 
+    </body>
+
+
+
+
+
+</html>
