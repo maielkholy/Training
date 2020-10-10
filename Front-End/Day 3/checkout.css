@@ -1,0 +1,118 @@
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: 10px;
+
+  }
+
+.thin{
+  
+    font-size: large;
+}
+
+  
+.cart {
+  
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 4em 4em 2em;
+    width: 40vw;
+    top: 4vw;
+    left:45vw;
+    position:relative;
+    box-shadow: 0 0 1em #222;
+    border-radius: 2px;
+  }
+h2 {
+    margin: 0 0 50px 0;
+    padding: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: #666666;
+    border-bottom: solid 1px #e5e5e5;
+  }
+p {
+    margin: 0 0 3em 0;
+    position: relative;
+  }
+
+
+  .order-info {
+    height:100%;
+    width:100%;
+    padding-left:25px;
+    padding-right:25px;
+    box-sizing:border-box;
+    display:flex;
+    
+    position:relative;
+  }
+  .price {
+    bottom:0px;
+    position: relative;
+    left:175%;
+    color:#4488dd;
+    font-size: large;
+  }
+  .order-table td:first-of-type {
+    width:50%;
+  }
+  .order-table {
+      position:relative;
+      width: 100%;
+  }
+  .line {
+    height:1px;
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+    background:#ddd;
+  }
+  .order-table td:last-of-type {
+    vertical-align:top;
+    padding-left:25px;
+  }
+  .order-info-content {
+    table-layout:fixed;
+    width:100%;
+  
+  }
+.checkout-btn{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    margin: 0;
+    background: rgba(119, 68, 1, 0.7);
+    border-radius: 2px;
+    left:200%;
+    border: none;
+    color: #fff;
+    display: block;
+    font-size: 2em;
+    line-height: 1.6em;
+    margin: 2em 0 0;
+    outline: none;
+    padding: 0.8em 0;
+    text-shadow: 0 1px #e6e33e;
+}
+.checkout-btn:hover{
+    background: rgba(83, 53, 12, 0.7);;
+    text-shadow: 0 1px 3px rgba(70, 93, 41, 0.7);
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+      background: #1C2331!important;
+  }
+}
+.view,body,html{height:100%}.navbar{
+  background-color:rgba(0,0,0,.2)
+}
+.page-footer,.top-nav-collapse{
+  background-color:#1C2331
+}
+@media only screen and (max-width:768px){
+  .navbar{background-color:#1C2331}}

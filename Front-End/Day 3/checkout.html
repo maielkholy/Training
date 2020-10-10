@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FOODY-Checkout</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <link href="checkout.css" type="text/css" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
+    
+        <nav class="navbar navbar-expand-sm navbar-collapse bg-faded fixed-top navbar-dark py-0 ">
+            <a class="navbar-brand" href="home.html">
+                <img src="icon.png" alt="Logo" style="width:3vw;">
+            </a> 
+            <span class="navbar-brand py-0">
+            <strong>FOODY</strong>
+            </span>
+           
+            <ul class="navbar-nav ml-auto py-0">
+                <form class="form-inline py-0">
+                    <div class="md-form my-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+              <li class="nav-item py-0">
+                <a class="nav-link" target=_blank href="register.html">Sign Up</a>
+              </li>
+              <li class="nav-item py-0">
+                <a class="nav-link" target=_blank href="checkout.html">Cart</a>
+              </li>
+            </ul>
+            </nav>
+       
+    </head>
+    <body>
+        <div class="cart">
+            <table id="itemCart" class="order-table">
+
+            <div><h2><img width="20%" src="checkout.png"/>   Checkout Cart</h2> </div>
+
+                
+                
+                <!--OneItem-->
+                <tr>
+                    <td><img width=150 src="https://s3.eu-central-1.amazonaws.com/engine.izi.finance/izifood/products/1598905527692.jpeg"/></td>
+                
+                <td>
+                  <br> <span class='thin'>Chili Pizza</span>
+                  <br>Chilli pizza <br>size: Medium</br> extras: -cheese<br><br>
+                </td>
+                </tr>
+
+                <tr>
+                    <td><div class="price" id="p" value=20> $20</div></td>
+                    
+                </tr>
+                <!--end of item-->
+                <!--NewItem-->
+                <tr>
+                    <td>
+                        <img width="150px" src="https://img.freepik.com/free-photo/craft-beef-burger-with-cheese-rocket-leafs-wood-table_74692-155.jpg?size=626&ext=jpg"/>
+                    </td>
+                
+                <td>
+                  <br> <span class='thin'>Cheese Burger</span>
+                  <br>Speciality Beef burger with cheese.<br> extras: -jallepeno<br><br>
+                </td>
+                </tr>
+
+                <tr>
+                    <td><div class="price" id="p" value=10> $10</div></td>
+                    
+                </tr>
+                <!--end of item-->
+        
+            </table>
+            <button class="checkout-btn" onClick=myFunction() value="Check Out">Check Out</button>
+          
+          </div>
+          <script>
+            function myFunction() {
+              var x = document.getElementsByClassName("price");
+              var total=0;
+              var text="";
+              for (var i = 0; i < x.length ;i++) {
+                  total+= parseInt(x[i].getAttribute('value'));
+              }
+              alert("Food is on it's way! Cart Total: $"+ total);
+            }
+            </script> 
+    </body>
+
+
+
+
+
+</html>
